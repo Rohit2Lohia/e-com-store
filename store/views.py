@@ -13,6 +13,11 @@ def store(request):
     context={ 'products':products }
     return render(request, 'store/Store.html',context)
 
+def detail(request,id):
+    item=Product.objects.get(id=id)
+    item.name=item.name.capitalize()
+    return render(request, 'store/Detail.html',{'item':item})
+
 def cart(request):
     context_to_pass={}
     return render(request, 'store/Cart.html')

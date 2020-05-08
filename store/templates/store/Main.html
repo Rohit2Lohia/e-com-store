@@ -13,7 +13,7 @@
 
 <body>
 
-   <nav class="navbar navbar-expand-lg navbar-light" id="nav" style="background-color: #c1ffb6; ">
+   <nav class="navbar navbar-expand-lg navbar-light" id="nav" style="background-color: #c1ffb6;">
       <a class="navbar-brand" href="{% url 'store:list' %}"> <img id="my-logo" src="{% static 'images/new-logo.JPG' %}" alt=""> </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon" style="background:Blue;"></span>
@@ -47,7 +47,7 @@
             <a href="{% url 'store:cart' %}">
                <img id="cart-icon" src="{% static 'images/cart.png' %}">
             </a>
-            <p id="cart-total">{{cartItems}}</p>
+            <p id="cart-total">2{{cartItems}}</p>
          </div>
       </div>
 

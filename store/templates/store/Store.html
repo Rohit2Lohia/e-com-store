@@ -10,7 +10,7 @@
          <div class="box-element product">
             <h6> <strong>{{ item.name }}</strong> </h6>
             <button type="button" name="button" class="btn-sm btn-outline-secondary add-btn">Add to Cart</button>
-            <a href="#" class="btn-sm btn-outline-success">View details</a>
+            <a href="{% url 'store:detail' id=item.id %}" class="btn-sm btn-outline-success">View details</a>
             <h4 style="display: inline-block; float: right"><strong>{{ item.price }} $</strong></h4>
          </div>
       </div>
